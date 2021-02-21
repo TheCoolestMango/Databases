@@ -30,7 +30,7 @@ con.close()
 
 from faker import Faker
 fake = Faker()
-for i in range(100):
+for i in range(100000):
     print(i)
-    cur.execute("INSERT INTO STUDENT (Admission,Name,Age,Course,Department) VALUES ('"+ str(i)+"','"+fake.name()+"','"+str(fake.pyint(16, 50, 1))+"','SE', 'ICT')")
+    cur.execute("INSERT INTO CUSTOMER (ID,Name,Address,review) VALUES ('"+ str(i)+"','"+fake.name()+"','"+fake.address()+"','"+fake.text()+"')")
     con.commit()
