@@ -2,7 +2,7 @@
 # psql -d template1
 import psycopg2
 con = psycopg2.connect(database="customers", user="postgres",
-                       password="123456", host="127.0.0.1", port="5432")
+                       password="becausewut101", host="127.0.0.1", port="55818")
 
 print("Database opened successfully")
 cur = con.cursor()
@@ -15,7 +15,7 @@ print("Table created successfully")
 
 print("Record inserted successfully")
 cur = con.cursor()
-cur.execute("SELECT admission, name, age, course, department from STUDENT")
+cur.execute("SELECT ID, Name, Address, review from CUSTOMER")
 rows = cur.fetchall()
 
 print(rows)
