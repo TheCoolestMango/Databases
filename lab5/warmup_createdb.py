@@ -1,7 +1,7 @@
 # create db
 # psql -d template1
 import psycopg2
-con = psycopg2.connect(database="students", user="postgres",
+con = psycopg2.connect(database="customers", user="postgres",
                        password="123456", host="127.0.0.1", port="5432")
 
 print("Database opened successfully")
