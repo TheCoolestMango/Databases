@@ -2,7 +2,7 @@
 # psql -d template1
 import psycopg2
 con = psycopg2.connect(database="customers", user="postgres",
-                       password="becausewut101", host="127.0.0.1", port="5432")
+                       password="123123123", host="127.0.0.1", port="5432")
 
 print("Database opened successfully")
 cur = con.cursor()
