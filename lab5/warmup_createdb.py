@@ -6,12 +6,11 @@ con = psycopg2.connect(database="students", user="postgres",
 
 print("Database opened successfully")
 cur = con.cursor()
-cur.execute('''CREATE TABLE STUDENT
-      (ADMISSION INT PRIMARY KEY     NOT NULL,
-      NAME           TEXT    NOT NULL,
-      AGE            INT     NOT NULL,
-      COURSE        CHAR(50),
-      DEPARTMENT        CHAR(50));''')
+cur.execute('''CREATE TABLE CUSTOMER
+       (ID INT PRIMARY KEY     NOT NULL,
+       Name           TEXT    NOT NULL,
+       Address            TEXT     NOT NULL,
+       review        TEXT);''')
 print("Table created successfully")
 
 print("Record inserted successfully")
