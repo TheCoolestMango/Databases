@@ -14,6 +14,11 @@ cur.execute('''CREATE TABLE STUDENT
       DEPARTMENT        CHAR(50));''')
 print("Table created successfully")
 
+print("Record inserted successfully")
+cur = con.cursor()
+cur.execute("SELECT admission, name, age, course, department from STUDENT")
+rows = cur.fetchall()
+
 print(rows)
 for row in rows:
     print("ADMISSION =", row[0])
