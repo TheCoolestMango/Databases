@@ -20,11 +20,10 @@ rows = cur.fetchall()
 
 print(rows)
 for row in rows:
-    print("ADMISSION =", row[0])
-    print("NAME =", row[1])
-    print("AGE =", row[2])
-    print("COURSE =", row[3])
-    print("DEPARTMENT =", row[4], "\n")
+    print("ID =", row[0])
+    print("Name =", row[1])
+    print("Address =", row[2])
+    print("review =", row[3], "\n")
 print("Operation done successfully")
 con.close()
 
