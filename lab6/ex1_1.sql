@@ -5,4 +5,4 @@ SELECT DISTINCT title,rating,category.name FROM film
 	JOIN rental ON inventory.inventory_id = rental.inventory_id
 WHERE (rating = 'R' OR rating = 'PG-13')
 	AND (category.name = 'Horror' OR category.name = 'Sci-Fi')
-	AND (rental.return_date is not null)
+	AND (rental.return_date is null)
