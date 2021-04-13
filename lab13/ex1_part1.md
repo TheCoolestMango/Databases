@@ -28,4 +28,5 @@ create (p1:fighter{name:"Brandon Vera", weight: "205"}),
 ```
 
 
-![image](https://user-images.githubusercontent.com/69856251/114512587-ef81ca80-9c41-11eb-83b4-4012eb692e14.png)
+![image](https://user-images.githubusercontent.com/69856251/114514862-67e98b00-9c44-11eb-8ce5-80ea3f8abef7.png)
+
