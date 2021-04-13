@@ -1,6 +1,7 @@
 # Part 1
 
-``` create (p1:fighter{name:"Brandon Vera", weight: "205"}),
+``` 
+create (p1:fighter{name:"Brandon Vera", weight: "205"}),
 (p2:fighter{name:"Brock Lesnar", weight: "230"}),
 (p3:fighter{name:"Daniel Cormier", weight: "205"}),
 (p4:fighter{name:"Frank Mir", weight: "230"}),
@@ -23,7 +24,8 @@
 (p6)-[:beats]->(p9),
 (p9)-[:beats]->(p8),
 (p9)-[:beats]->(p6),
-(p8)-[:beats]->(p5); ```
+(p8)-[:beats]->(p5); 
+```
 
 
 ![image](https://user-images.githubusercontent.com/69856251/114512587-ef81ca80-9c41-11eb-83b4-4012eb692e14.png)
